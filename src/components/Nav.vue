@@ -19,6 +19,8 @@ import { inject } from "vue";
             <li class="nav_link"><a href=""><router-link to="/depense"><i class="fa-solid fa-comments-dollar"></i>Dépense</router-link></a></li>
             <li class="nav_link"><a href=""><router-link to="/budget"><i class="fa-solid fa-money-check-dollar"></i>Budget</router-link></a></li>
             <li class="nav_link"><a href=""><router-link to="/investissement"><i class="fa-solid fa-display-chart-up-circle-dollar"></i>Investissement</router-link></a></li>
+            <li class="nav_link"><a href=""><router-link to="/budget"><i class="fa-sharp fa-regular fa-file-chart-column"></i>Rapport</router-link></a></li>
+            <li class="nav_link"><a href=""><router-link to="/budget"><i class="fa-solid fa-gear"></i>Paramettre</router-link></a></li>
         </ul>
     </nav>
 </template>
