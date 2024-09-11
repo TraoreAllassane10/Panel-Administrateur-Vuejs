@@ -14,11 +14,11 @@ import { inject } from "vue";
             <p>Traore Allassane</p>
         </div>
         <ul class="navbar">
-            <li class="nav_link"><a href=""><router-link to="/">Tableau de Bord</router-link></a></li>
-            <li class="nav_link"><a href=""><router-link to="/revenu">Revenu</router-link></a></li>
-            <li class="nav_link"><a href=""><router-link to="/depense">Dépense</router-link></a></li>
-            <li class="nav_link"><a href=""><router-link to="/budget">Budget</router-link></a></li>
-            <li class="nav_link"><a href=""><router-link to="/investissement">Investissement</router-link></a></li>
+            <li class="nav_link"><a href=""><router-link to="/"><i class="fa-solid fa-gauge"></i>Tableau de Bord</router-link></a></li>
+            <li class="nav_link"><a href=""><router-link to="/revenu"><i class="fa-solid fa-money-bill"></i>Revenu</router-link></a></li>
+            <li class="nav_link"><a href=""><router-link to="/depense"><i class="fa-solid fa-comments-dollar"></i>Dépense</router-link></a></li>
+            <li class="nav_link"><a href=""><router-link to="/budget"><i class="fa-solid fa-money-check-dollar"></i>Budget</router-link></a></li>
+            <li class="nav_link"><a href=""><router-link to="/investissement"><i class="fa-solid fa-display-chart-up-circle-dollar"></i>Investissement</router-link></a></li>
         </ul>
     </nav>
 </template>

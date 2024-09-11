@@ -1,7 +1,7 @@
 <template>
     <div class="header" :class="{ 'header-full' : toggleMenu===false}">
         <div class="links">
-            <button @click="changeToggleMenuValue">Toggle</button>
+            <button @click="changeToggleMenuValue"><i class="fa-solid fa-bars"></i></button>
             <a href="">Acceuil</a>
             <a href="">Contact</a>
         </div>
