@@ -56,6 +56,6 @@
 
 .statistiques .card p{
   font-size: 16px;
-  color:#555555;;
+  color:#555555;
 }
 </style>

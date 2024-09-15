@@ -19,13 +19,13 @@ let {toggleMenu, changeToggleMenuValue} = inject('toggleMenu')
 <style scoped>
 .header {
     background-color: #FFF;
-    width: 82%;
+    width: 84%;
     height: 60px;
     position: absolute;
     top: 0px;
     left: 0;
     box-shadow: 7px 0px 8px #E0E0E0;
-    margin-left: 18%;
+    margin-left: 16%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +41,13 @@ let {toggleMenu, changeToggleMenuValue} = inject('toggleMenu')
     display: flex;
     gap: 20px;
     padding: 50px;
+    place-items: center;
+}
+
+.header .links button{
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
 }
 
 .header .links a, a{

@@ -9,10 +9,10 @@ import { inject } from "vue";
         <div class="logo">
             FINANCE PERSONNELLE
         </div>
-        <div class="user">
+        <!-- <div class="user">
             <img src="../assets/profile.png" alt="">
             <p>Traore Allassane</p>
-        </div>
+        </div> -->
         <ul class="navbar">
             <li class="nav_link"><a href=""><router-link to="/"><i class="fa-solid fa-gauge"></i>Tableau de Bord</router-link></a></li>
             <li class="nav_link"><a href=""><router-link to="/revenu"><i class="fa-solid fa-money-bill"></i>Revenu</router-link></a></li>
@@ -32,7 +32,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 18%;
+    width: 16%;
     height: 100vh;
     background-color: #FFF;
     box-shadow: 0 7px 8px #E0E0E0;
@@ -50,7 +50,7 @@ nav {
 
 nav .logo {
     color: #3f70f5;
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px 0 0 20px;
 }
 
@@ -78,20 +78,24 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    padding-top: 20px;
+    gap: 25px;
+    padding-left: 20;
+    padding-top: 60px;
 }
 
 nav ul li a {
     font-size: 18px;
     text-decoration: none;
     transition: all 0.3s ease;
+    
 }
 
 nav ul li a:hover {
     color: #171717;
+}
+
+nav ul li a i{
+    font-size: 25px;
+    margin-right: 10px;
 }
 </style>

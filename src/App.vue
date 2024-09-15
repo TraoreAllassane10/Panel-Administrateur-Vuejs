@@ -14,6 +14,6 @@ import LayoutDasboard from './Layouts/LayoutDashboard.vue'
 
 <style scoped>
 .container{
-  padding: 50px;
+  padding: 20px;
 }
 </style>
