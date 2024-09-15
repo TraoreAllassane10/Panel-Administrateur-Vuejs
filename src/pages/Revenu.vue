@@ -40,37 +40,28 @@
         <th>Commentaire</th>
       </tr>
 
-      <tr>
-        <td>1</td>
-        <td>15/09/2024</td>
-        <td>200 000f</td>
-        <td>Freelances</td>
-        <td>Honoraire</td>
-        <td>Banque</td>
-        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dolore architecto</td>
+      <tr v-for="revenu in revenuData" :key="revenu.id">
+        <td>{{ revenu.id }}</td>
+        <td>{{ revenu.date }}</td>
+        <td>{{ revenu.montant }}</td>
+        <td>{{ revenu.source }}</td>
+        <td>{{ revenu.categorie }}</td>
+        <td>{{ revenu.paiement }}</td>
+        <td>{{ revenu.commentaire }}</td>
       </tr>
-      <tr>
-        <td>2</td>
-        <td>15/09/2024</td>
-        <td>200 000f</td>
-        <td>Freelances</td>
-        <td>Honoraire</td>
-        <td>Banque</td>
-        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dolore architecto</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>15/09/2024</td>
-        <td>200 000f</td>
-        <td>Freelances</td>
-        <td>Honoraire</td>
-        <td>Banque</td>
-        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dolore architecto</td>
-      </tr>
-
     </table>
   </div>
 </template>
+
+<script setup>
+import { onMounted, ref } from "vue"
+import revenus from "../assets/revenus"
+const revenuData = ref([])
+
+onMounted(() => {
+  revenuData.value = revenus.value
+})
+</script>
 
 <style scoped>
 /* Style pour le filtre */
@@ -97,6 +88,7 @@
   border: 2px solid #555555;
   outline: none;
   color: #555555;
+  border-radius: 10px;
 }
 
 
