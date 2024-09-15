@@ -48,6 +48,7 @@ let {toggleMenu, changeToggleMenuValue} = inject('toggleMenu')
     background-color: transparent;
     font-size: 30px;
     border: none;
+    cursor: pointer;
 }
 
 .header .links a, a{
