@@ -12,11 +12,11 @@
 
     <div class="filtre-paiement">
       <label for="">Mode de paiement : </label>
-      <select name="" id="">
+      <select v-model="paiement" @change="filterParPaiement">
         <option value=""></option>
-        <option value="">Banque</option>
-        <option value="">Espèces</option>
-        <option value="">Mobile Money</option>
+        <option value="banque">Banque</option>
+        <option value="especes">Espèces</option>
+        <option value="mobile">Mobile Money</option>
       </select>
     </div>
 
@@ -56,11 +56,33 @@
 <script setup>
 import { onMounted, ref } from "vue"
 import revenus from "../assets/revenus"
+
 const revenuData = ref([])
+const paiement = ref('')
 
 onMounted(() => {
   revenuData.value = revenus.value
 })
+
+const filterParPaiement = () => {
+   if (paiement.value == 'banque') {
+    revenuData.value = revenus.value.filter((revenu) => revenu.paiement === 'Banque')
+   }
+   else if(paiement.value == 'especes')
+   {
+    revenuData.value = revenus.value.filter((revenu) => revenu.paiement === 'Especes')
+   }
+   else if(paiement.value == 'mobile')
+   {
+    revenuData.value = revenus.value.filter((revenu) => revenu.paiement === 'Mobile money')
+   }
+
+   else
+   {
+    revenuData.value = revenus.value
+   }
+}
+
 </script>
 
 <style scoped>
